@@ -3,9 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
@@ -36,6 +38,11 @@ footer p {
   color: #ccc;
 }
 
+.note-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -43,7 +50,6 @@ footer p {
   padding: 10px;
   width: 240px;
   margin: 16px;
-  float: left;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -67,7 +73,17 @@ footer p {
 
 .note:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  /* transform: scale(1.2);
-  background: #f5ba13;
+  transform: scale(1.15);
+  /* background: #f5ba13;
   color: #fff; */
+}
+
+.agent-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.agent-img {
+  width: 350px;
 }
