@@ -15,7 +15,7 @@ function App() {
     const [Joke, setJoke] = React.useState("")
 
     const fetchApi = () => {
-        fetch("https://sv443.net/jokeapi/v2/joke/Programming?type=single")
+        fetch("https://v2.jokeapi.dev/joke/Any")
             .then((res) => res.json())
             .then((data) => setJoke(data));
     }
@@ -40,6 +40,8 @@ function App() {
                         <Card
                             id={Joke.id}
                             category={Joke.category}
+                            setup={Joke.setup}
+                            delivery={Joke.delivery}
                             joke={Joke.joke}
                         />
                     )}
