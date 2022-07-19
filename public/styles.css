@@ -27,6 +27,7 @@ header h1 {
 }
 
 button {
+  font-family: inherit;
   margin: 10px 0 5px;
   width: 100%;
   max-width: 300px;

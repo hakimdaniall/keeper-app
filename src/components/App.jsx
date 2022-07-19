@@ -33,7 +33,7 @@ function App() {
                         />
                     )}
                 </div>
-                <h2>Want random more jokes?</h2>
+                <h2>Want more random jokes?</h2>
                 <div>
                     <Button callApi={fetchApi} />
                     {Joke && (
